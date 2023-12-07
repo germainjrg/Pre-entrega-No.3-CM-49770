@@ -39,6 +39,7 @@ botonContar.addEventListener("click", function() {
 });
 
 function cargarEstados (){
+    // CARGAR ESTADO DE LUCES
     let estadoLucesGuardado_jsonstring = localStorage.getItem("estadoLuces");
     let estadoLucesRecuperado = JSON.parse(estadoLucesGuardado_jsonstring);
     luces.estado = estadoLucesRecuperado.estado;
@@ -46,61 +47,69 @@ function cargarEstados (){
     luces.boton.innerText = estadoLucesRecuperado.textoGuardadoBoton;
     cambiarColor(luces.estadoMostrado.value,"estadoLuces");
 
-    let estadoLucesGuardado_jsonstring = localStorage.getItem("estadoLuces");
-    let estadoLucesRecuperado = JSON.parse(estadoLucesGuardado_jsonstring);
-    luces.estado = estadoLucesRecuperado.estado;
-    luces.estadoMostrado.value = luces.estado;
-    luces.boton.innerText = estadoLucesRecuperado.textoGuardadoBoton;
-    cambiarColor(luces.estadoMostrado.value,"estadoLuces");
+    // CARGAR ESTADO DE LAVADORA
+    let estadoLavadoraGuardado_jsonstring = localStorage.getItem("estadoLavadora");
+    let estadoLavadoraRecuperado = JSON.parse(estadoLavadoraGuardado_jsonstring);
+    lavadora.estado = estadoLavadoraRecuperado.estado;
+    lavadora.estadoMostrado.value = lavadora.estado;
+    lavadora.boton.innerText = estadoLavadoraRecuperado.textoGuardadoBoton;
+    cambiarColor(lavadora.estadoMostrado.value,"estadoLavadora");
 
-    let estadoLucesGuardado_jsonstring = localStorage.getItem("estadoLuces");
-    let estadoLucesRecuperado = JSON.parse(estadoLucesGuardado_jsonstring);
-    luces.estado = estadoLucesRecuperado.estado;
-    luces.estadoMostrado.value = luces.estado;
-    luces.boton.innerText = estadoLucesRecuperado.textoGuardadoBoton;
-    cambiarColor(luces.estadoMostrado.value,"estadoLuces");
+    // CARGAR ESTADO DE SECADORA
+    let estadoSecadoraGuardado_jsonstring = localStorage.getItem("estadoSecadora");
+    let estadoSecadoraRecuperado = JSON.parse(estadoSecadoraGuardado_jsonstring);
+    secadora.estado = estadoSecadoraRecuperado.estado;
+    secadora.estadoMostrado.value = secadora.estado;
+    secadora.boton.innerText = estadoSecadoraRecuperado.textoGuardadoBoton;
+    cambiarColor(secadora.estadoMostrado.value,"estadoSecadora");
+    
+    // CARGAR ESTADO DE COCINA
+    let estadoCocinaGuardado_jsonstring = localStorage.getItem("estadoCocina");
+    let estadoCocinaRecuperado = JSON.parse(estadoCocinaGuardado_jsonstring);
+    cocina.estado = estadoCocinaRecuperado.estado;
+    cocina.estadoMostrado.value = cocina.estado;
+    cocina.boton.innerText = estadoCocinaRecuperado.textoGuardadoBoton;
+    cambiarColor(cocina.estadoMostrado.value,"estadoCocina");
 
-    let estadoLucesGuardado_jsonstring = localStorage.getItem("estadoLuces");
-    let estadoLucesRecuperado = JSON.parse(estadoLucesGuardado_jsonstring);
-    luces.estado = estadoLucesRecuperado.estado;
-    luces.estadoMostrado.value = luces.estado;
-    luces.boton.innerText = estadoLucesRecuperado.textoGuardadoBoton;
-    cambiarColor(luces.estadoMostrado.value,"estadoLuces");
+    // CARGAR ESTADO DE LAVAVAJILLAS
+    let estadoLavavajillasGuardado_jsonstring = localStorage.getItem("estadoLavavajillas");
+    let estadoLavavajillasRecuperado = JSON.parse(estadoLavavajillasGuardado_jsonstring);
+    lavavajillas.estado = estadoLavavajillasRecuperado.estado;
+    lavavajillas.estadoMostrado.value = lavavajillas.estado;
+    lavavajillas.boton.innerText = estadoLavavajillasRecuperado.textoGuardadoBoton;
+    cambiarColor(lavavajillas.estadoMostrado.value,"estadoLavavajillas");
 
-    let estadoLucesGuardado_jsonstring = localStorage.getItem("estadoLuces");
-    let estadoLucesRecuperado = JSON.parse(estadoLucesGuardado_jsonstring);
-    luces.estado = estadoLucesRecuperado.estado;
-    luces.estadoMostrado.value = luces.estado;
-    luces.boton.innerText = estadoLucesRecuperado.textoGuardadoBoton;
-    cambiarColor(luces.estadoMostrado.value,"estadoLuces");
+    // CARGAR ESTADO DE REFRIGERADORA
+    let estadoRefrigeradoraGuardado_jsonstring = localStorage.getItem("estadoRefrigeradora");
+    let estadoRefrigeradoraRecuperado = JSON.parse(estadoRefrigeradoraGuardado_jsonstring);
+    refrigeradora.estado = estadoRefrigeradoraRecuperado.estado;
+    refrigeradora.estadoMostrado.value = refrigeradora.estado;
+    refrigeradora.boton.innerText = estadoRefrigeradoraRecuperado.textoGuardadoBoton;
+    cambiarColor(refrigeradora.estadoMostrado.value,"estadoRefrigeradora");
+    
+    // CARGAR ESTADO DE COMPUTADORA
+    let estadoComputadoraGuardado_jsonstring = localStorage.getItem("estadoComputadora");
+    let estadoComputadoraRecuperado = JSON.parse(estadoComputadoraGuardado_jsonstring);
+    computadora.estado = estadoComputadoraRecuperado.estado;
+    computadora.estadoMostrado.value = computadora.estado;
+    computadora.boton.innerText = estadoComputadoraRecuperado.textoGuardadoBoton;
+    cambiarColor(computadora.estadoMostrado.value,"estadoComputadora");
 
-    let estadoLucesGuardado_jsonstring = localStorage.getItem("estadoLuces");
-    let estadoLucesRecuperado = JSON.parse(estadoLucesGuardado_jsonstring);
-    luces.estado = estadoLucesRecuperado.estado;
-    luces.estadoMostrado.value = luces.estado;
-    luces.boton.innerText = estadoLucesRecuperado.textoGuardadoBoton;
-    cambiarColor(luces.estadoMostrado.value,"estadoLuces");
+    // CARGAR ESTADO DE TELEVISOR
+    let estadoTelevisorGuardado_jsonstring = localStorage.getItem("estadoTelevisor");
+    let estadoTelevisorRecuperado = JSON.parse(estadoTelevisorGuardado_jsonstring);
+    televisor.estado = estadoTelevisorRecuperado.estado;
+    televisor.estadoMostrado.value = televisor.estado;
+    televisor.boton.innerText = estadoTelevisorRecuperado.textoGuardadoBoton;
+    cambiarColor(televisor.estadoMostrado.value,"estadoTelevisor");
 
-    let estadoLucesGuardado_jsonstring = localStorage.getItem("estadoLuces");
-    let estadoLucesRecuperado = JSON.parse(estadoLucesGuardado_jsonstring);
-    luces.estado = estadoLucesRecuperado.estado;
-    luces.estadoMostrado.value = luces.estado;
-    luces.boton.innerText = estadoLucesRecuperado.textoGuardadoBoton;
-    cambiarColor(luces.estadoMostrado.value,"estadoLuces");
-
-    let estadoLucesGuardado_jsonstring = localStorage.getItem("estadoLuces");
-    let estadoLucesRecuperado = JSON.parse(estadoLucesGuardado_jsonstring);
-    luces.estado = estadoLucesRecuperado.estado;
-    luces.estadoMostrado.value = luces.estado;
-    luces.boton.innerText = estadoLucesRecuperado.textoGuardadoBoton;
-    cambiarColor(luces.estadoMostrado.value,"estadoLuces");
-
-    let estadoLucesGuardado_jsonstring = localStorage.getItem("estadoLuces");
-    let estadoLucesRecuperado = JSON.parse(estadoLucesGuardado_jsonstring);
-    luces.estado = estadoLucesRecuperado.estado;
-    luces.estadoMostrado.value = luces.estado;
-    luces.boton.innerText = estadoLucesRecuperado.textoGuardadoBoton;
-    cambiarColor(luces.estadoMostrado.value,"estadoLuces");
+    // CARGAR ESTADO DE SONIDO
+    let estadoSonidoGuardado_jsonstring = localStorage.getItem("estadoSonido");
+    let estadoSonidoRecuperado = JSON.parse(estadoSonidoGuardado_jsonstring);
+    sonido.estado = estadoSonidoRecuperado.estado;
+    sonido.estadoMostrado.value = sonido.estado;
+    sonido.boton.innerText = estadoSonidoRecuperado.textoGuardadoBoton;
+    cambiarColor(luces.estadoMostrado.value,"estadoSonido");
     
 }
 
