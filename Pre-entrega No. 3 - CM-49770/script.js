@@ -30,14 +30,6 @@ function cambiarColor(estadoEquipo, idElementoHTML) {
     elemento.style.backgroundColor = (estadoEquipo == encendido) ? "green" : "red";
 }
 
-botonGuardar.addEventListener("click", function() {
-
-});
-
-botonContar.addEventListener("click", function() {
-    
-});
-
 function cargarEstados (){
     // CARGAR ESTADO DE LUCES
     let estadoLucesGuardado_jsonstring = localStorage.getItem("estadoLuces");
